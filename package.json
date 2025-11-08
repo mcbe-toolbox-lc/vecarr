@@ -12,6 +12,9 @@
 		"vector"
 	],
 	"type": "module",
+	"peerDependencies": {
+		"gl-matrix": "^3.4.4"
+	},
 	"devDependencies": {
 		"prettier": "^3.6.2"
 	}
