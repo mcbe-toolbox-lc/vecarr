@@ -12,6 +12,16 @@
 		"vector"
 	],
 	"type": "module",
+	"scripts": {
+		"test": "vitest run",
+		"test:watch": "vitest",
+		"build": "tsup",
+		"build:watch": "tsup --watch",
+		"lint": "tsc",
+		"clean": "shx rm -rf dist",
+		"format": "prettier --write .",
+		"prepack": "pnpm run build"
+	},
 	"peerDependencies": {
 		"gl-matrix": "^3.4.4"
 	},
