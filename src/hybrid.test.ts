@@ -39,6 +39,11 @@ describe("HybridVec2", () => {
 		const spreaded = { ...hybridVec };
 		expect(spreaded).toStrictEqual({ x: 6, y: 9 });
 	});
+
+	it("toString()", () => {
+		const hybridVec = new HybridVec2([6, 9]);
+		expect(hybridVec.toString()).toBe("6,9");
+	});
 });
 
 describe("HybridVec3", () => {
@@ -80,5 +85,10 @@ describe("HybridVec3", () => {
 		const hybridVec = new HybridVec3([0, 6, 9]);
 		const spreaded = { ...hybridVec };
 		expect(spreaded).toStrictEqual({ x: 0, y: 6, z: 9 });
+	});
+
+	it("toString()", () => {
+		const hybridVec = new HybridVec3([0, 6, 9]);
+		expect(hybridVec.toString()).toBe("0,6,9");
 	});
 });
