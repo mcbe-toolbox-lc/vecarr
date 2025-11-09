@@ -67,6 +67,10 @@ export class HybridVec2 {
 		yield this.#array[0];
 		yield this.#array[1];
 	}
+
+	toString(): string {
+		return `${this.x},${this.y}`;
+	}
 }
 
 export class HybridVec3 {
@@ -149,5 +153,9 @@ export class HybridVec3 {
 		yield this.#array[0];
 		yield this.#array[1];
 		yield this.#array[2];
+	}
+
+	toString(): string {
+		return `${this.x},${this.y},${this.z}`;
 	}
 }
