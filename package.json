@@ -2,6 +2,7 @@
 	"name": "@mcbe-toolbox-lc/vecarr",
 	"version": "0.1.0",
 	"license": "0BSD",
+	"description": "Utilities for conversion between array-based vectors and object-based vectors.",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/mcbe-toolbox-lc/vecarr.git"
