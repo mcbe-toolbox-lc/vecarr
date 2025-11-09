@@ -28,9 +28,6 @@
 		"format": "prettier --write .",
 		"prepack": "pnpm run build"
 	},
-	"peerDependencies": {
-		"gl-matrix": "^3.4.4"
-	},
 	"devDependencies": {
 		"@types/node": "^22.19.0",
 		"prettier": "^3.6.2",
