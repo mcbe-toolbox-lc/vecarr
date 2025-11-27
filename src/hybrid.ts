@@ -11,7 +11,7 @@ export class HybridVec2 {
 		if (Array.isArray(vec)) {
 			this.#array = vec;
 		} else {
-			this.#array = conversion.toArr2(vec, fallbackValues);
+			this.#array = conversion.toArr2(vec as Partial<Vector2Object> | undefined, fallbackValues);
 		}
 
 		const xDesc = Object.getOwnPropertyDescriptor(HybridVec2.prototype, "x")!;
@@ -83,7 +83,7 @@ export class HybridVec3 {
 		if (Array.isArray(vec)) {
 			this.#array = vec;
 		} else {
-			this.#array = conversion.toArr3(vec, fallbackValues);
+			this.#array = conversion.toArr3(vec as Partial<Vector3Object> | undefined, fallbackValues);
 		}
 
 		const xDesc = Object.getOwnPropertyDescriptor(HybridVec3.prototype, "x")!;
