@@ -1,4 +1,5 @@
 import * as conversion from "./conversion";
+import { isIndexedCollection } from "./indexed-collection";
 import type { Vector2Array, Vector2Object, Vector3Array, Vector3Object } from "./types";
 
 export class HybridVec2 {
@@ -8,7 +9,7 @@ export class HybridVec2 {
 		vec?: Vector2Array | Partial<Vector2Object>,
 		fallbackValues?: Partial<Vector2Object>,
 	) {
-		if (Array.isArray(vec)) {
+		if (isIndexedCollection(vec)) {
 			this.#array = vec;
 		} else {
 			this.#array = conversion.toArr2(vec as Partial<Vector2Object> | undefined, fallbackValues);
@@ -80,7 +81,7 @@ export class HybridVec3 {
 		vec?: Vector3Array | Partial<Vector3Object>,
 		fallbackValues?: Partial<Vector3Object>,
 	) {
-		if (Array.isArray(vec)) {
+		if (isIndexedCollection(vec)) {
 			this.#array = vec;
 		} else {
 			this.#array = conversion.toArr3(vec as Partial<Vector3Object> | undefined, fallbackValues);
