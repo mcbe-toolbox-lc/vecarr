@@ -1,7 +1,4 @@
-interface IndexedCollection extends Iterable<number> {
-	readonly length: number;
-	[index: number]: number;
-}
+import type { IndexedCollection } from "./indexed-collection";
 
 export type Vector2Object = {
 	x: number;
